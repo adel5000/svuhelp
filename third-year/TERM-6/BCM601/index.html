@@ -13,26 +13,40 @@
       rel="stylesheet"
     />
     <!-- normalize  css file  -->
-    <link rel="stylesheet" href="css/normalize-min.css" />
+    <link rel="stylesheet" href="../../../css/normalize-min.css" />
     <!-- master  css file  -->
-    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="../../../css/master.css" />
   </head>
   <body>
+    <!-- dynamiclink file js  -->
+    <script src="../../../js/DynamicLink.js"></script>
     <!-- start navbar  -->
     <div class="navbar">
       <div class="container">
         <div class="Header"><h1>Svuhelp Team</h1></div>
         <div class="logo">
-          <img src="img/logo.png" alt="SvuHelp Team" title="SvuHelp Team" />
+          <img
+            src="../../../img/logo.png"
+            alt="SvuHelp Team"
+            title="SvuHelp Team"
+          />
         </div>
       </div>
     </div>
     <div class="container">
       <div class="content">
-        <div class="card"><a href="./first-year">السَّنة الأولى</a></div>
-        <div class="card"><a href="./second-year">السَّنة الثانية</a></div>
-        <div class="card"><a href="./third-year">السَّنة الثالثة</a></div>
-        <div class="card"><a href="./fourth-year">السَّنة الرابعة</a></div>
+        <div
+          class="card en-card"
+          role="button"
+          tabindex="0"
+          onclick="Dylink('https://www.youtube.com/watch?v=vTwylfHf4bw&list=PL4fosBsvj6QVB1uIMQS4KrZ93uZFN0sov')"
+        >
+          DR.Rouaa wannous
+        </div>
+
+        <div class="card" onclick="window.location.assign('../')">
+          العودة للسابق
+        </div>
       </div>
     </div>
 

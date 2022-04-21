@@ -107,6 +107,10 @@ ul {
   user-select: none;
   cursor: pointer;
   transition: all linear 0.25s;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1.6;
+  text-align: center;
 }
 .card a,
 .card a:visited {
@@ -117,7 +121,15 @@ ul {
   padding-bottom: 40px;
   background-color: #131c52;
 }
+.en-card {
+  direction: ltr;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  letter-spacing: -1.4px;
+}
 .footer {
+  margin-top: 70px;
   height: 100px;
   background-color: #1a237e;
   color: #fff;
