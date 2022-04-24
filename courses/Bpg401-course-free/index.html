@@ -13,36 +13,44 @@
       rel="stylesheet"
     />
     <!-- normalize  css file  -->
-    <link rel="stylesheet" href="css/normalize-min.css" />
+    <link rel="stylesheet" href="../../../css/normalize-min.css" />
     <!-- master  css file  -->
-    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="../../../css/master.css" />
   </head>
   <body>
+    <!-- dynamiclink file js  -->
+    <script src="../../../js/DynamicLink.js"></script>
     <!-- start navbar  -->
     <div class="navbar">
       <div class="container">
         <div class="Header"><h1>Svuhelp Team</h1></div>
         <div class="logo">
-          <img src="img/logo.png" alt="SvuHelp Team" title="SvuHelp Team" />
+          <img
+            src="../../../img/logo.png"
+            alt="SvuHelp Team"
+            title="SvuHelp Team"
+          />
         </div>
       </div>
     </div>
     <div class="container">
       <div class="content">
-        <div class="card" onclick="window.location.assign('./first-year')">
-          السَّنة الأولى
+        <div
+          class="card"
+          onclick="Dylink('https://www.youtube.com/watch?v=tVxbtM-Cc8Q&list=PL4fosBsvj6QV5Jvbu0BR1bNUySA3_L0v8')"
+        >
+          قائمة التشغيل على اليوتيوب
         </div>
-        <div class="card" onclick="window.location.assign('./second-year')">
-          السَّنة الثانية
+        <div
+          class="card"
+          onclick="window.location.assign('https://chat.whatsapp.com/CVb5dGBiGnz98kEFVzc9Jj')"
+        >
+          جروب الواتس
         </div>
-        <div class="card" onclick="window.location.assign('./third-year')">
-          السَّنة الثالثة
+
+        <div class="card" onclick="window.location.assign('../')">
+          العودة للسابق
         </div>
-        <div class="card" onclick="window.location.assign('./fourth-year')">
-          السَّنة الرابعة
-        </div>
-        <div class="card" onclick="window.location.assign('./courses')">
-كورسات        </div>
       </div>
     </div>
 
