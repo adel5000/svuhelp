@@ -134,21 +134,82 @@ ul {
 .staff-card {
   font-size: 40px;
   flex-direction: column;
-  padding: 140px 20px;
+  padding: 80px 20px;
+  background-color: #28347e;
+  border-radius: 40px;
+  user-select: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 80px;
+  font-family: "Aref Ruqaa", serif;
+  margin-bottom: 40px;
 }
-.staff-card:hover {
-  padding-bottom: 180px;
+.social-media {
+  margin-top: 20px;
+  background: #3f51b5;
+  border-radius: 8px;
+  display: flex;
+  width: 90%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-media .fa-whatsapp:hover {
+  color: #44c453;
+  background-color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.social-media .fa-telegram:hover {
+  color: #2ca3dd;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+.social-media .fa-facebook:hover {
+  color: #2c2fdd;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+.title {
+  background: #7b88cb;
+  color: #fff;
+  margin: 30px 0 0 0;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Changa", sans-serif;
+  font-weight: 900;
+  border-radius: 8px;
 }
 .counter {
-  height: 100px;
   background-color: #303f9f;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
   font-family: "Aref Ruqaa", serif;
   font-size: 32px;
+  padding: 30px 0;
+}
+.counter div {
+  margin: 10px 0;
+}
+#counter {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  font-size: 50px;
+  font-family: "Oleo Script", cursive;
 }
 .footer {
   height: 100px;

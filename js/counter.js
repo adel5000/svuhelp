@@ -1,6 +1,35 @@
 const countEl = document.getElementById("counter");
+let numberss;
+function separateComma(val) {
+  // remove sign if negative
+  var sign = 1;
+  if (val < 0) {
+    sign = -1;
+    val = -val;
+  }
+  // trim the number decimal point if it exists
+  let num = val.toString().includes(".")
+    ? val.toString().split(".")[0]
+    : val.toString();
+  let len = num.toString().length;
+  let result = "";
+  let count = 1;
 
-updateVisitCount();
+  for (let i = len - 1; i >= 0; i--) {
+    result = num.toString()[i] + result;
+    if (count % 3 === 0 && count !== 0 && i !== 0) {
+      result = "," + result;
+    }
+    count++;
+  }
+
+  // add number after decimal point
+  if (val.toString().includes(".")) {
+    result = result + "." + val.toString().split(".")[1];
+  }
+  // return result with - sign if negative
+  return sign < 0 ? "-" + result : result;
+}
 
 function updateVisitCount() {
   fetch(
@@ -8,21 +37,11 @@ function updateVisitCount() {
   )
     .then((res) => res.json())
     .then((res) => {
-      countEl.innerHTML = res.value;
+      numberss = res.value;
+      countEl.innerText = separateComma(numberss);
     });
 }
-
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector(".floating-btn");
-const close_btn = document.querySelector(".close-btn");
-const social_panel_container = document.querySelector(
-  ".social-panel-container"
-);
-
-floating_btn.addEventListener("click", () => {
-  social_panel_container.classList.toggle("visible");
-});
-
-close_btn.addEventListener("click", () => {
-  social_panel_container.classList.remove("visible");
-});
+updateVisitCount();
+countEl.onchange = function () {
+  countEl.innerText = separateComma(countEl.innerText);
+};
