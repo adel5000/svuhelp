@@ -210,6 +210,7 @@ ul {
   display: flex;
   font-size: 50px;
   font-family: "Oleo Script", cursive;
+  letter-spacing: 4px;
 }
 .footer {
   height: 100px;
